@@ -1,14 +1,31 @@
 
 .footer{
-    height: 500px;
+    height: auto;
     width: 100%;
     background-color:#214C69;
     color: #fff;
 }
 .top{
-    height: 100px;
-    background: #000;
+    height: 80px;
+    background: #F0F4FB;
 }
+
+
+.top p{
+    margin-top: 0;
+    color: #000000;
+}
+.footer-top-img p{
+    font-size: 20px;
+}
+.footer-top-img{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 h3{
     margin-top: 0;
 
@@ -19,7 +36,27 @@ h3{
     align-items: flex-start; 
 }
 
- a {
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+
+}
+
+.top img{
+    height: 60px;
+    width: 70px;
+}
+.company-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ a{
     margin: 5px 0; 
     text-decoration: none;
     color: inherit; 
@@ -62,9 +99,7 @@ a:hover{
     transition: background-color 0.3s ease; 
 }
 
-.text:hover {
-    background-color: rgba(255, 255, 255, 0.2); 
-}
+
 .btn {
     margin: 10px;
     border-radius: 10px;
@@ -80,7 +115,7 @@ a:hover{
 .address{
     
     display: flex;
-    height: 50px;
+    height: auto;
    
 }
 .left{
@@ -89,7 +124,7 @@ a:hover{
 }
 .right{
     padding-right: 80px;
-    height: 50px;
+    /* height: 50px; */
     width: 67%;
 }
 .up{
@@ -111,11 +146,99 @@ margin: 0px;
 .socials{
     margin-top: 20px;
     background: #24495F;
-    padding: 10px 80px;
+    padding: 20px 80px;
     display: flex;
     justify-content: space-between;
 }
+.socials p{
+    margin-top: 10px;
+}
+.socials a{
+   text-decoration: none;
+} 
 
 .social-icons{
-    margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
 }
+.social-icons a{
+   
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-top-img{
+        width: 100%;
+    }
+
+    .top img{
+        height: 40px;
+        width: 40px;
+    }
+    .top p{
+        font-size: 15px;
+    }
+    .horizantal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Center align the text and content */
+        padding-bottom: 0px;
+    }
+
+    .horizantal > div {
+        width: 100%; /* Make each section take full width */
+        display: flex;
+        justify-content: center; /* Center align the content horizontally */
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    .vertical{
+        flex-direction: column;
+    }
+
+    .horizantal .Special-section,
+    .horizantal .Account-shipping,
+    .horizantal .Newsletter {
+        align-items: center; /* Center align items within each section */
+    }
+    .socials{
+        flex-direction: column;
+        align-items: center;
+    }
+    .address {
+        display: flex;
+        flex-direction: column; /* Stack items vertically on small devices */
+        align-items: center; /* Center align items */
+    }
+    
+    .left{
+        display: none;
+    }
+    .right {
+        width: 100%; /* Full width for each section */
+        text-align: center; /* Center align text */
+    }
+    
+    .right {
+        padding-right: 0; /* Remove padding on small devices */
+        margin-top: 20px; /* Add some spacing between the left and right sections */
+    }
+    
+    .up {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+    
+    .down {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+      
+    }
+    
+   
+    
+}
+
+    
