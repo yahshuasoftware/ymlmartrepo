@@ -1,0 +1,129 @@
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+
+  .abc{
+    position: relative;
+  }
+  .login-form-wrapper {
+    width: 300px;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    background-color: #f5f5f5;
+    border-radius: 15px; 
+  }
+  
+  /* Title */
+  .login-title {
+    font-size: 1.25rem;
+    text-align: center;
+    letter-spacing: -0.05em; 
+  }
+  
+  
+  .login-form {
+    margin-top: 2rem; 
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 1rem; 
+  }
+  
+  .login-form input[type="email"],
+  .login-form input[type="password"],.login-form input[type="text"] {
+    width: 280px;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 8px; 
+    border: 1px solid #6b7280; 
+  }
+
+  .login-form input{
+    font-size: 17px;
+  }
+  
+
+.password-container {
+    position: relative; 
+  }
+  
+
+  
+  /* Toggle password visibility icon */
+  .toggle-password {
+    position: absolute;
+    right: 12px; 
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 24px;
+    height: 24px; 
+    pointer-events: all; 
+  }
+  
+  
+  /* Forgot password link */
+  .forgot-password {
+    text-align: right;
+    margin-top: 0.5rem; 
+  }
+  
+  .forgot-password a {
+    color: #3b82f6; 
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline; 
+  }
+  
+  /* Submit button */
+  .submit-button {
+    width: 150px;
+    padding: 8px 12px;
+    margin: 20px;
+    background-color: #2497DE; 
+    color: #ffffff; 
+    border-radius: 9999px; 
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .submit-button:hover {
+    background-color: #2497DE;
+  }
+  
+  /* Error message */
+  .error-message {
+    position: absolute;
+    text-align: center; 
+    margin-top: 1rem; 
+    width: 100%; 
+  }
+  .error-message p {
+    font-size: 15px;
+    color: #ef4444; 
+    margin: 0; 
+    display: inline-block;
+  }
+
+  .login-link {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #4b5563; /* Text color */
+    font-size: 0.875rem; /* Font size */
+    margin-top: 12px; /* Margin top */
+    font-weight: 600; /* Font weight */
+  }

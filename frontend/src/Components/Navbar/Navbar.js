@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 import { FaUser, FaCartArrowDown,FaRegUserCircle, FaSearch, FaChevronDown } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { FaStore } from "react-icons/fa6";
@@ -41,13 +42,15 @@ const Navbar = () => {
             <FaChevronDown className={`arrow-icon ${profileDropdownOpen ? 'rotate' : ''}`} />
           </button>
           {profileDropdownOpen && (
-            <div className="dropdown profile-dropdown">
-              <a href="/profile"><FaRegUserCircle className='innerIcon'/>My Profile</a>
-              <a href="/wishlist">Wishlist</a>
-              <a href="/coupons">Coupons</a>
-              <a href="/notifications">Notification</a>
-              <a href="/logout">Logout</a>
-            </div>
+             <div className="dropdown profile-dropdown">
+             <Link to="/login">Login</Link>
+             <Link to="/register">Register</Link>
+             <Link to="/profile"><FaRegUserCircle className='innerIcon'/>My Profile</Link>
+             <Link to="/wishlist">Wishlist</Link>
+             <Link to="/coupons">Coupons</Link>
+             <Link to="/notifications">Notification</Link>
+             <Link to="/">Logout</Link>
+           </div>
           )}
         </div>
         <div className="cart">
@@ -74,7 +77,7 @@ const Navbar = () => {
             <div className="dropdown three-dots-dropdown">
               <a href="/settings">Settings</a>
               <a href="/help">Help</a>
-              <a href="/logout">Logout</a>
+              <a href="/">Logout</a>
             </div>
           )}
         </div>

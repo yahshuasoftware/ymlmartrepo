@@ -1,0 +1,6 @@
+{
+    "files.watcherExclude": {
+        "**/.git/objects/**": false,
+        "**/node_modules/*/**": false
+    }
+}
