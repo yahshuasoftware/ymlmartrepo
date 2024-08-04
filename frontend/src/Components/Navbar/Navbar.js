@@ -38,7 +38,7 @@ const Navbar = () => {
         >
           <button className="profile-button">
             <FaUser className="navbar-icon" />
-            <span className="icon-label">UserName</span>
+            <span className="icon-label">Arjun</span>
             <FaChevronDown className={`arrow-icon ${profileDropdownOpen ? 'rotate' : ''}`} />
           </button>
           {profileDropdownOpen && (
