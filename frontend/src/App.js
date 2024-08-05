@@ -6,6 +6,7 @@ import Login from './Components/Login/login';
 import Register from './Components/Register/register';
 import Footer from './Components/Footer/footer';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import  Swiper  from './Components/Swiper/Swiper';
 
 // Main App Component
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
+      <Swiper/>
       <Footer />
     </>
   );
