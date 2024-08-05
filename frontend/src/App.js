@@ -7,6 +7,7 @@ import Register from './Components/Register/register';
 import Footer from './Components/Footer/footer';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import  Swiper  from './Components/Swiper/Swiper';
+import Cart from './Components/Cart/Cart'
 
 // Main App Component
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       <Swiper/>
       <Footer />
