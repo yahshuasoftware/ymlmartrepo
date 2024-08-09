@@ -1,24 +1,26 @@
 // Register.js
 import React from 'react';
-import '../Register/register.css';
+
 
 const Register = () => {
   return (
     <div className="login-container">
       <div className="abc">
-
         <div className="login-form-wrapper">
           <h3 className="login-title">Register to get started</h3>
           <form action="/register" method="post" className="login-form">
           <label>
-              Username
-              <input type="text" name="username" required />
+              Name
+              <input type="text" name="name" required />
+            </label>
+          <label>
+              Mobile No
+              <input type="number" name="number" required />
             </label>
             <label>
               Email
               <input type="email" name="email" required />
             </label>
-
             <label>
               Password
               <div className="password-container">

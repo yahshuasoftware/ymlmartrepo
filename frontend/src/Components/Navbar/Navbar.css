@@ -107,6 +107,7 @@
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   min-width: 150px;
+  z-index: 100;
 }
 .three-dots-dropdown {
   right: 0; /* Align dropdown to the right */

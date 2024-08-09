@@ -18,7 +18,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
+        <a href="/">
         <img src="logo.png" alt="Logo" className="logo" />
+        </a>
+        
       </div>
       <div className="navbar-center">
         <div className="search-container">

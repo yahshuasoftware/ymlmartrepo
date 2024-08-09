@@ -1,0 +1,78 @@
+styles.css
+
+/* General Styles */
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #4a4a4a;
+}
+
+/* Container */
+.item-container {
+    padding: 6rem 1.25rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Flexbox for Layout */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem;
+}
+
+.flex > div {
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    .flex > div {
+        width: 50%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .flex > div {
+        width: 25%;
+    }
+}
+
+/* Image Styling */
+.product-detail img {
+    display: block;
+    margin: auto;
+    height: 30vh;
+    border-radius: 0.25rem;
+}
+
+@media(min-width: 768px) {
+    .product-detail img{
+        height: 36vh;
+    }
+}
+
+/* Text Centering */
+.text-center {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.text-center h3 {
+    color: #6b7280;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.text-center h2 {
+    color: #111827;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.text-center p {
+    margin-top: 0.25rem;
+}

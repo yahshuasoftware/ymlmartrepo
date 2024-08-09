@@ -8,6 +8,8 @@ import Footer from './Components/Footer/footer';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import  Swiper  from './Components/Swiper/Swiper';
 import Cart from './Components/Cart/Cart'
+import Product from './Components/Product/Product'
+import Profile from './Helper/Profile/Profile';
 
 // Main App Component
 function App() {
@@ -16,13 +18,21 @@ function App() {
   return (
     <>
       {location.pathname !== '/login' && location.pathname !== '/register' && <Navbar />}
-      <CategoryBar />
+      {location.pathname !== '/profile' &&   <CategoryBar />}
+     
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
-      <Swiper/>
+      {location.pathname !== '/cart' && location.pathname !== '/profile' && location.pathname !== '/login' && location.pathname !== '/register' &&(
+        <>
+        <Swiper/>
+        <Product/>
+        </>
+      )}
+      
       <Footer />
     </>
   );
